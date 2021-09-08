@@ -8,11 +8,7 @@ button.addEventListener('click', function() {
 const requisicao = async () => {
   try {
     const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/`)
-    {name, url} = {response.data.results.name, response.data.results.url}
-    console.log(name, url);
-/*     const namePoke = response.data
-    console.log(namePoke)
-    bulbasaur(namePoke); */
+    console.log(response);
   } catch(e) {
     console.log(e);
   }
